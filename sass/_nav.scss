@@ -1,0 +1,33 @@
+header{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.head{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 3rem 0 2rem; 
+	img{
+		width: 100%;
+	}
+	a{
+		flex-basis: 25%;
+	}
+}
+
+nav{
+	flex: 1;
+	ul{
+		display: flex;
+		justify-content: space-evenly;
+		list-style: none;
+		li{
+			font-size: 28px;
+			text-transform: uppercase;
+		}
+	}
+}
