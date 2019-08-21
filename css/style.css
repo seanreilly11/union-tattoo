@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+html {
+  font-size: 24px;
+  position: relative; }
+
+body {
+  background: #121212; }
+
+h1 {
+  color: #fff; }
+
 header {
   width: 100%;
   display: flex;
@@ -13,7 +30,8 @@ header {
   align-items: center;
   padding: 3rem 0 2rem; }
   .head img {
-    width: 100%; }
+    width: 100%;
+    max-width: 400px; }
   .head a {
     flex-basis: 25%; }
 
@@ -60,21 +78,6 @@ nav {
 .active:hover::before {
   transform: scaleX(0); }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
-
-html {
-  font-size: 24px; }
-
-body {
-  background: #121212; }
-
-h1 {
-  color: #fff; }
-
 .heading {
   font-weight: bold;
   font-size: 48px;
@@ -96,11 +99,18 @@ p, label, a, i {
 .Xspacing {
   margin-bottom: 10rem; }
 
+.Lspacing {
+  margin-bottom: 3rem; }
+
 .container {
   text-align: center;
   width: 70%;
   margin: auto;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 footer p {
   padding: 3rem;
@@ -228,6 +238,97 @@ footer p {
   transform: translateY(140px);
   cursor: pointer; }
 
+.name {
+  padding: 2rem 0 .5rem; }
+
+.instaHandle {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .instaHandle i {
+    padding-right: .5rem;
+    color: #cbae86;
+    font-size: 1.5rem; }
+
+.instaHandle__text {
+  color: #cbae86;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.artist__para--right {
+  display: flex;
+  justify-content: flex-end; }
+
+.artist__para--center {
+  display: flex;
+  justify-content: center; }
+
+.artist__para--left {
+  display: flex;
+  justify-content: flex-start; }
+
+.small__para {
+  width: 80%; }
+
+.accentLine--left--small {
+  position: relative; }
+  .accentLine--left--small::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #cbae86;
+    width: 2px;
+    height: 100%; }
+
+.accentLine--right--large {
+  position: relative; }
+  .accentLine--right--large::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background: #cbae86;
+    width: 2px;
+    height: 500%; }
+
+.artist__text--craigy--x {
+  transform: translate(9%, 20px);
+  width: 118%;
+  text-align: left;
+  clear: right; }
+
+.artist__text--steph--x {
+  transform: translate(10%, -100px);
+  width: 120%;
+  text-align: left; }
+
+.artist__text--sholto--x {
+  transform: translate(-9%, -210px);
+  width: 118%;
+  text-align: right; }
+
+.artist__text--zoe--x {
+  transform: translate(-9%, -240px);
+  width: 118%;
+  text-align: right; }
+
+.artist__nav {
+  width: 40%;
+  margin: auto; }
+  .artist__nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .artist__nav ul li {
+      font-weight: 100; }
+
+.active__artist {
+  text-decoration: underline; }
+  .active__artist a {
+    font-weight: bolder; }
+
 .booking__info {
   text-align: left; }
 
@@ -237,5 +338,30 @@ footer p {
 .booking__headings {
   color: #cbae86;
   font-weight: bold; }
+
+.booking__form__sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100px; }
+
+.clipath__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%; }
+
+.booking__form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-basis: 50%; }
+
+.clippath {
+  clip-path: polygon(40% 15%, 55% 0, 55% 85%, 40% 100%);
+  width: 600px;
+  height: 400px; }
 
 /*# sourceMappingURL=style.css.map */
