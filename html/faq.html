@@ -26,7 +26,7 @@
 			<button class="faq">When are you open?</button>
 			<div class="panel">
 				<p>Monday – Friday 10.30 till 18.00</p>
-				<p>Saturday & Sunday 11.00-16.00</p>
+				<p>Saturday & Sunday 11.00 till 16.00</p>
 			</div>
 
 			<button class="faq">Do I have to make an appointment?</button>
@@ -73,5 +73,21 @@
 			<p>© 2019 Union Tattoo in Wellington. All Rights Reserved.</p>
 		</footer>
 	</div>
+	<script>
+		var acc = document.getElementsByClassName("faq");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("activePanel");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			});
+		}
+	</script>
 </body>
 </html>
